@@ -55,3 +55,7 @@ html, body {
   display: inline-block;
   width: 15px;
 }
+
+.answerBox {
+  width: 100px;
+}
