@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 25%;
+  font-size: 20%;
   -webkit-text-size-adjust: none;
 }
 
@@ -24,10 +24,10 @@ html, body {
 }
 
 .sidebar {
-  width: 30vw;
+  width: 40vw;
   background-color: #333;
   color: white;
-  padding: 20px;
+  padding: 10px;
   overflow-y: auto;
 }
 
