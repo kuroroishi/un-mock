@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 20%;
+  font-size: 25%;
   -webkit-text-size-adjust: none;
 }
 
@@ -18,13 +18,13 @@ html, body {
 
 .main {
   flex: 1;
-  padding: 20px;
+  padding: 10px;
   overflow-y: auto;
   background-color: #f9f9f9;
 }
 
 .sidebar {
-  width: 50vw;
+  width: 40vw;
   background-color: #333;
   color: white;
   padding: 10px;
