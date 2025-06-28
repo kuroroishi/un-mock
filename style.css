@@ -51,11 +51,41 @@ html, body {
   color: rgb(0, 162, 255);
 }
 
+.secretLabel{
+  display: inline-block;
+}
+
 .boxLabel {
   display: inline-block;
+  vertical-align: top;
   width: 15px;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .answerBox {
-  width: 100px;
+  width: 110px;
+}
+
+.correct {
+  display: inline-block;
+  vertical-align: top;
+  width: 110px;
+  white-space: normal;
+  word-break: break-word;
+  margin-left: 10px;
+  color: rgb(0, 255, 102);
+}
+
+.correctCheck {
+  margin-left: 10px;
+  height: 10px;
+}
+
+.score {
+  margin-left: 10px;
+}
+
+.secret {
+  display: none;
 }
