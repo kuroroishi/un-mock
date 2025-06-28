@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 25%;
 }
 
 html, body {
@@ -34,15 +35,15 @@ html, body {
 }
 
 .pr2 {
-  margin-left: 25px;
+  margin-left: 10px;
 }
 
 .pr3 {
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 .pr4 {
-  margin-left: 75px;
+  margin-left: 30px;
 }
 
 .display {
@@ -51,5 +52,5 @@ html, body {
 
 .boxLabel {
   display: inline-block;
-  width: 20px;
+  width: 15px;
 }
