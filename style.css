@@ -22,7 +22,7 @@ html, body {
 }
 
 .sidebar {
-  width: 300px;
+  width: 30vw;
   background-color: #333;
   color: white;
   padding: 20px;
@@ -31,4 +31,25 @@ html, body {
 
 .menu-item {
   margin-bottom: 15px;
+}
+
+.pr2 {
+  margin-left: 25px;
+}
+
+.pr3 {
+  margin-left: 50px;
+}
+
+.pr4 {
+  margin-left: 75px;
+}
+
+.display {
+  color: rgb(0, 162, 255);
+}
+
+.boxLabel {
+  display: inline-block;
+  width: 20px;
 }

@@ -6,162 +6,279 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UnMock-Question</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="main">    
-            <h1>ゲムの概要</h1>
-            <p>
-                相手が伏せたカードを当てることで勝利を目指す、2人用推理カードゲームです。
-                ユニットカードでアタックすれば、伏せられたカードをあばけるかもしれません。
+        <div class="main">
+            <h4>二人用推理カードゲーム</h4>
+            <h1>UnMock ルール回答欄</h1>
+            <br>
+            <p class="pr2">
+                カードの効果からルールを推理して、下のルールの穴を埋めていきましょう！<br>
+                (回答欄には単語ではなく文章が入る場合もあります)<br>
+                (複数の回答欄に同じ単語が入る場合もあります)<br>
             </p>
-
-            <h1>ゲームの準備</h1>
-            <p>
-                ①デッキの作成
-        ゲームを始める前に、各プレイヤーは全てのカードの中から自由に選んで束にします。このカードの束をデッキと呼びます。
-        デッキを作る際は、以下のルールを守らねばなりません。
-        ・メインデッキとエナジーデッキという2種類のデッキを作らなければならない。 　　　メインデッキはユニットカード、またはスペルカードから20枚、
-        エナジーデッキはエナジーカードから3枚選んで構成しなければならない。
-        ・同じ名前のカードはメインデッキに2枚、
-        エナジーデッキに1枚までしか入れてはならない。
-
-        ②フィールドの準備
-        じゃんけんなど適当な方法で、先攻と後攻を決めます。
-        その後、各プレイヤーはそれぞれ以下の準備をします。
-        ・メインデッキをデッキゾーンに置きます。
-        ・エナジーデッキのカードを全て、1枚ずつエナジーゾーンに裏向きで置きます。
-        ・デッキの上から 先攻は2枚、後攻は3枚引き、手札にします。
-
-        以上でゲームの準備は完了です。
+            <br>
+            <br>
+            
+            
+            
+            <h2>ゲームの準備</h2>
+            <h4 class="pr2">①ゾーンの設定</h4>
+            <p class="pr3">
+                このゲームでは、場を以下の5つのゾーンに分けて行います。<br>
+                <br>
+                ・<span class="display AA">【A】</span>ゾーン<br>
+                ・<span class="display AB">【B】</span>ゾーン<br>
+                ・<span class="display AC">【C】</span>ゾーン<br>
+                ・<span class="display AD">【D】</span>ゾーン(<span class="display AF">【F】</span>)<br>
+                ・<span class="display AE">【E】</span>ゾーン(<span class="display AF">【F】</span>)<br>
             </p>
-
-            <h1>ゲームの手順</h1>
-            <p>
-                自分のターンになったプレイヤーは、以下のフェイズを順番に行います。
-
-                １．スタートフェイズ
-                　自分の全てのゾーンにあるカードを全てスタンドさせます。
-                自分の全てのユニットのパワーを、元のパワーまで回復します。
-                
-                ２．メインフェイズ
+            <br>
+            <h4 class="pr2">②デッキの作成</h4>
+            <p class="pr3">
+                ゲームを始める前に、各プレイヤーは全てのカードの中から自由に選んで束にします。<br>
+                このカードの束をデッキと呼びます。<br>
+                デッキを作る際は、以下のルールを守らねばなりません。<br>
+                <br>
+                ・メインデッキと<span class="display AG">【G】</span>デッキという2種類のデッキを作らなければならない。<br>
+                メインデッキは<span class="display AH">【H】</span>カード、または<span class="display AI">【I】</span>カードから<span class="display AJ">【J】</span>枚、<br>
+                <span class="display AG">【G】</span>デッキは<span class="display AG">【G】</span>カードから<span class="display AK">【K】</span>枚選んで構成しなければならない。<br>
+                ・同じ名前のカードはメインデッキに<span class="display AL">【L】</span>枚、<br>
+                <span class="display AG">【G】</span>デッキに<span class="display AM">【M】</span>枚までしか入れてはならない。
+            </p>
+            <br>
+            <h4 class="pr2">③フィールドの準備</h4>
+            <p class="pr3">
+                じゃんけんなど適当な方法で、先攻と後攻を決めます。<br>
+                その後、各プレイヤーはそれぞれ以下の準備をします。<br>
+                <br>
+                ・メインデッキを<span class="display AA">【A】</span>ゾーンに置きます。<br>
+                ・<span class="display AG">【G】</span>デッキのカードを全て、1枚ずつ<span class="display AB">【B】</span>ゾーンに裏向きで置きます。<br>
+                ・デッキの上から 先攻は<span class="display AN">【N】</span>枚、後攻は<span class="display AO">【O】</span>枚引き、手札にします。<br>
+                <br>
+                以上でゲームの準備は完了です。<br>
+            </p>
+            <br>
+            <br>
+            <br>
+            
+            
+            
+            <h2>ゲームの手順</h2>
+            <p class="pr2">自分のターンになったプレイヤーは、以下のフェイズを順番に行います。</p>
+            <br>
+            <h4 class="pr2">①<span class="display BA">【A】</span>フェイズ</h4>
+            <p class="pr3">
+                自分の全てのゾーンにあるカードを全て<span class="display BB">【B】</span>させます。<br>
+                その後、自分の全ての<span class="display BC">【C】</span>の<span class="display BD">【D】</span>を、元の<span class="display BD">【D】</span>まで回復します。<br>
+            </p>
+            <br>
+            <h4 class="pr2">②メインフェイズ</h4>
+            <p class="pr3">
                 以下の4つの行動を好きな順番で何回でも行うことができます。
-                
-                《ドロー》
-                エナジーゾーンにあるスタンドしているカードを1枚レストすることで、
-                デッキゾーンの一番上のカードを手札に加えることができます。
-                手札が3枚以上ある場合、ドローを行うことはできません。
-                
-                《手札の使用》
-                自分の手札からカードを選び、指定されたコスト分、エナジーゾーンにある
-                スタンドしているカードをレストすることで選んだカードを使用できます。
-                ユニットカードならば前衛ゾーン、もしくは後衛ゾーンのどちらかを選んで
-                メインエリアに出します。
-                (ただし、既に2体以上のユニットが存在するゾーンに出すことはできません)
-                スペルカードならば効果を発動したあと、トラッシュゾーンに置きます。 
-                
-                《ユニットの移動》
-                自分のスタンドしているユニットを1体選び、レストさせることで
-                前衛ゾーン、もしくは後衛ゾーンに移動させます。
-                (ただし、既に2体以上のユニットが存在するゾーンに移動させることはできません。
-                また、そのターンにメインエリアに出たユニットを移動させることはできません)
-                
-                《ユニットのアタック》
+            </p>
+            <br>
+            <h4 class="pr3"><span class="display BE">【E】</span></h4>
+            <p class="pr4">
+                <span class="display BF">【F】</span>ゾーンにある<span class="display BG">【G】</span>しているカードを<span class="display BH">【H】</span>枚<span class="display BI">【I】</span>することで、<br>
+                <span class="display BJ">【J】</span>ゾーンの一番上のカードを手札に加えることができます。<br>
+                手札が<span class="display BK">【K】</span>枚以上ある場合、<span class="display BE">【E】</span>を行うことはできません。<br>
+            </p>
+            <br>
+            <h4 class="pr3"><span class="display BL">【L】</span></h4>
+            <p class="pr4">
+                自分の手札からカードを選び、指定された<span class="display BM">【M】</span>分、<span class="display BF">【F】</span>ゾーンにある<br>
+                <span class="display BG">【G】</span>しているカードを<span class="display BI">【I】</span>することで選んだカードを使用できます。<br>
+                <span class="display BN">【N】</span>カードならば<span class="display BO">【O】</span>ゾーン、もしくは<span class="display BP">【P】</span>ゾーンのどちらかを選んで<br>
+                <span class="display BQ">【Q】</span>に出します。<br>
+                (ただし、既に<span class="display BR">【R】</span>体以上の<span class="display BN">【N】</span>が存在するゾーンに出すことはできません)<br>
+                <span class="display BS">【S】</span>カードならば効果を発動したあと、<span class="display BT">【T】</span>ゾーンに置きます。<br>
+            </p>
+            <br>
+            <h4 class="pr3"><span class="display BU">【U】</span></h4>
+            <p class="pr4">
+                自分の<span class="display BG">【G】</span>している<span class="display BN">【N】</span>を1体選び、<span class="display BI">【I】</span>させることで<br>
+                <span class="display BO">【O】</span>ゾーン、もしくは<span class="display BP">【P】</span>ゾーンに移動させます。<br>
+                (ただし、既に<span class="display BV">【V】</span>が存在するゾーンに移動させることはできません。<br>
+                また、<span class="display BW">【W】</span>ユニットを移動させることはできません)<br>
+            </p>
+            <br>
+            <h4 class="pr3">ユニットのアタック</h4>
+            <p class="pr4">
                 後述します。
-                
-                ターンプレイヤーがターンの終了を宣言した時、次のプレイヤーのターンに移行します。         
             </p>
-
-            <h1>ユニットのアタックについて</h1>
-            <p>
-                自分のメインエリアにあるスタンドしているユニットをレストすることで、
-                そのユニットで相手フィールドのユニット、もしくは相手プレイヤーを対象に
-                アタックすることができます。
-                
-                《アタックの条件》
-                アタック時、以下の条件に一つでも当てはまる場合アタックすることはできません。
-                ・アタックする自分のユニットが、そのターンに場に出たユニットである。
-                ・アタック対象の相手のユニットがスタンドしている。
-                ・後衛ゾーンに存在するユニットでアタックしている時に、
-                相手の前衛ゾーンのユニット以外をアタック対象にしている。
-                
-                　《アタックの処理》
-                相手のユニットにアタックした場合と、
-                相手プレイヤーにアタックした場合で別の処理をします。
-                
-                『相手のユニットにアタックした場合』
-                アタックした自分のユニットと相手のユニットでバトルが発生します。
-                バトルの際は相手のユニットのパワーを、
-                アタックした自分のユニットのパワー分、減少させます。
-                
-                パワーが0以下になったユニットはトラッシュゾーンに置きます。
-                また、ユニットのパワーの減少は、スタートフェイズまで回復しません。
-                
-                『相手プレイヤーにアタックした場合』	
-                相手プレイヤーへのアタックが成立した時、
-                アタックした側のプレイヤーは、好きな属性を一つ宣言します。
-                宣言された属性のカードが相手のエナジーゾーンにあった場合、
-                相手はそれを表向きにします。 
-                
-                《ガードについて》
-                非ターンプレイヤーはターンプレイヤーがアタックの対象を宣言した後、
-                自分の後衛ゾーンのスタンドしているユニットを選び、レストすることで
-                相手のアタックをガードさせることできます。
-                ガードした場合、ガードしたユニットにアタック対象を変更させます。
+            <br>
+            <p class="pr3">
+                ターンプレイヤーがターンの終了を宣言した時、次のプレイヤーのターンに移行します。<br>       
             </p>
+            <br>
+            <br>
+            <br>
 
-            <h1>勝利・敗北条件</h1>
-            <p>
-                相手のエナジーカードが全て表向きの状態で、相手プレイヤーにアタックを行ったプレイヤーの勝利です。
-        また、デッキゾーンのカードが0になったプレイヤーは敗北となります。
+            
+            
+            <h2>ユニットのアタックについて</h2>
+            <p class="pr2">
+                自分の<span class="display CA">【A】</span>にある<span class="display CB">【B】</span>している<span class="display CC">【C】</span>を<span class="display CD">【D】</span>することで、<br>
+                その<span class="display CC">【C】</span>で相手<span class="display CA">【A】</span>の<span class="display CC">【C】</span>、もしくは<span class="display CE">【E】</span>を対象に<br>
+                アタックすることができます。<br>
             </p>
+            <br>
+            <h4 class="pr2">・アタックの条件</h4>
+            <p class="pr3">
+                アタック時、以下の条件に一つでも当てはまる場合アタックすることはできません。<br>
+                <br>
+                ・<span class="display CF">【F】</span><br>
+                ・<span class="display CG">【G】</span><br>
+                ・<span class="display CH">【H】</span>でアタックしている時に、<br>
+                <span class="display CI">【I】</span>をアタック対象にしている。<br>
+            </p>
+            <br>
+            <h4 class="pr2">・アタックの処理</h4>
+            <p class="pr3">
+                相手の<span class="display CC">【C】</span>にアタックした場合と、<br>
+                <span class="display CE">【E】</span>にアタックした場合で別の処理をします。<br>
+                <br>
+                『相手の<span class="display CC">【C】</span>にアタックした場合』<br>
+                アタックした自分の<span class="display CC">【C】</span>と相手の<span class="display CC">【C】</span>で<span class="display CJ">【J】</span>が発生します。<br>
+                バトルの際は相手の<span class="display CC">【C】</span>の<span class="display CK">【K】</span>を、<br>
+                アタックした自分の<span class="display CC">【C】</span>の<span class="display CK">【K】</span>分、減少させます。<br>
+                <br>
+                <span class="display CL">【L】</span>になった<span class="display CC">【C】</span>は<span class="display CM">【M】</span>ゾーンに置きます。<br>
+                また、<span class="display CC">【C】</span>の<span class="display CK">【K】</span>の減少は、<span class="display CN">【N】</span>まで回復しません。<br>
+                <br>
+                『<span class="display CE">【E】</span>にアタックした場合』<br>
+                <span class="display CE">【E】</span>へのアタックが<span class="display CO">【O】</span>されずに成立した時、<br>
+                アタックした側のプレイヤーは、<span class="display CP">【P】</span>を一つ<span class="display CQ">【Q】</span>します。<br>
+                <span class="display CQ">【Q】</span>された<span class="display CP">【P】</span>のカードが相手の<span class="display CR">【R】</span>にあった場合、<br>
+                相手はそれを<span class="display CS">【S】</span>します。 <br>
+            </p>
+            <br>
+            <h4 class="pr2">・<span class="display CO">【O】</span>について</h4>
+            <p class="pr3">
+                非ターンプレイヤーはターンプレイヤーがアタックの対象を宣言した後、<br>
+                自分の<span class="display CT">【T】</span>の<span class="display CB">【B】</span>している<span class="display CC">【C】</span>を選び、<span class="display CD">【D】</span>することで<br>
+                相手のアタックを<span class="display CO">【O】</span>させることできます。<br>
+                <span class="display CO">【O】</span>した場合、<span class="display CO">【O】</span>した<span class="display CC">【C】</span>にアタック対象を変更させます。<br>
+            </p>
+            <br>
+            <br>
+            <br>
 
-            <h1>その他（完全に察せなくともよいルール）</h1>
-            <p>
-                《ゾーンの配置》
-                横の５つが分かれて存在していれば
-                どこに位置していても構いません。
-                
-                
-                
-                
-                《レスト、スタンドしているカードの状態》
-                レストはカードを横向き、スタンドは縦向きにする。などの扱いを想定しています。
-                ですが、二つの状態がプレイヤーの中で識別されていればどんな扱いでも構いません。
+
+
+            <h2>勝利・敗北条件</h2>
+            <p class="pr2">
+                <span class="display DA">【A】</span>の状態で、<span class="display DB">【B】</span>を行ったプレイヤーの勝利です。<br>
+                また、<span class="display DC">【C】</span>は敗北となります。<br>
+            </p>
+            <br>
+            <br>
+            <br>
+
+
+
+            <h2>その他（完全に察せなくともよいルール）</h2>
+            <h4 class="pr2">・ゾーンの配置</h4>
+            <p class="pr3">
+                ５つのゾーンが分かれて存在していればどこに位置していても構いません。<br>
+            </p>
+            <br>
+            <h4 class="pr2">・カードの状態による扱い</h4>
+            <p class="pr3">
+                状態によってカードの向きを変更するなどの扱いを想定しています。<br>
+                ですが、カードの状態がプレイヤーの中で識別されていればどんな扱いでも構いません。<br>
             </p>
         </div>
     
         <div class="sidebar">
-          <h2>メニュー</h2>
-          <div class="menu-item">項目1</div>
-          <div class="menu-item">項目2</div>
-          <div class="menu-item">項目3</div>
-          <div class="menu-item">項目4</div>
-          <div class="menu-item">項目5</div>
-          <div class="menu-item">項目6</div>
-          <div class="menu-item">項目7</div>
-          <div class="menu-item">項目8</div>
-          <div class="menu-item">項目9</div>
-          <div class="menu-item">項目1</div>
-          <div class="menu-item">項目2</div>
-          <div class="menu-item">項目3</div>
-          <div class="menu-item">項目4</div>
-          <div class="menu-item">項目5</div>
-          <div class="menu-item">項目6</div>
-          <div class="menu-item">項目7</div>
-          <div class="menu-item">項目8</div>
-          <div class="menu-item">項目9</div>
-          <div class="menu-item">項目1</div>
-          <div class="menu-item">項目2</div>
-          <div class="menu-item">項目3</div>
-          <div class="menu-item">項目4</div>
-          <div class="menu-item">項目5</div>
-          <div class="menu-item">項目6</div>
-          <div class="menu-item">項目7</div>
-          <div class="menu-item">項目8</div>
-          <div class="menu-item">項目9</div>
+            <h2>回答欄</h2>
+            <h4>ゲームの準備</h4>
+            <span class="boxLabel">A.</span><input type="text" id="AA"><br>
+            <span class="boxLabel">B.</span><input type="text" id="AB"><br>
+            <span class="boxLabel">C.</span><input type="text" id="AC"><br>
+            <span class="boxLabel">D.</span><input type="text" id="AD"><br>
+            <span class="boxLabel">E.</span><input type="text" id="AE"><br>
+            <span class="boxLabel">F.</span><input type="text" id="AF"><br>
+            <span class="boxLabel">G.</span><input type="text" id="AG"><br>
+            <span class="boxLabel">H.</span><input type="text" id="AH"><br>
+            <span class="boxLabel">I.</span><input type="text" id="AI"><br>
+            <span class="boxLabel">J.</span><input type="text" id="AJ"><br>
+            <span class="boxLabel">K.</span><input type="text" id="AK"><br>
+            <span class="boxLabel">L.</span><input type="text" id="AL"><br>
+            <span class="boxLabel">M.</span><input type="text" id="AM"><br>
+            <span class="boxLabel">N.</span><input type="text" id="AN"><br>
+            <span class="boxLabel">O.</span><input type="text" id="AO"><br>
+            <br>
+            <h4>ゲームの手順</h4>
+            <span class="boxLabel">A.</span><input type="text" id="BA"><br>
+            <span class="boxLabel">B.</span><input type="text" id="BB"><br>
+            <span class="boxLabel">C.</span><input type="text" id="BC"><br>
+            <span class="boxLabel">D.</span><input type="text" id="BD"><br>
+            <span class="boxLabel">E.</span><input type="text" id="BE"><br>
+            <span class="boxLabel">F.</span><input type="text" id="BF"><br>
+            <span class="boxLabel">G.</span><input type="text" id="BG"><br>
+            <span class="boxLabel">H.</span><input type="text" id="BH"><br>
+            <span class="boxLabel">I.</span><input type="text" id="BI"><br>
+            <span class="boxLabel">J.</span><input type="text" id="BJ"><br>
+            <span class="boxLabel">K.</span><input type="text" id="BK"><br>
+            <span class="boxLabel">L.</span><input type="text" id="BL"><br>
+            <span class="boxLabel">M.</span><input type="text" id="BM"><br>
+            <span class="boxLabel">N.</span><input type="text" id="BN"><br>
+            <span class="boxLabel">O.</span><input type="text" id="BO"><br>
+            <span class="boxLabel">P.</span><input type="text" id="BP"><br>
+            <span class="boxLabel">Q.</span><input type="text" id="BQ"><br>
+            <span class="boxLabel">R.</span><input type="text" id="BR"><br>
+            <span class="boxLabel">S.</span><input type="text" id="BS"><br>
+            <span class="boxLabel">T.</span><input type="text" id="BT"><br>
+            <span class="boxLabel">U.</span><input type="text" id="BU"><br>
+            <span class="boxLabel">V.</span><input type="text" id="BV"><br>
+            <span class="boxLabel">W.</span><input type="text" id="BW"><br>
+            <br>
+            <h4>ユニットのアタックについて</h4>
+            <span class="boxLabel">A.</span><input type="text" id="CA"><br>
+            <span class="boxLabel">B.</span><input type="text" id="CB"><br>
+            <span class="boxLabel">C.</span><input type="text" id="CC"><br>
+            <span class="boxLabel">D.</span><input type="text" id="CD"><br>
+            <span class="boxLabel">E.</span><input type="text" id="CE"><br>
+            <span class="boxLabel">F.</span><input type="text" id="CF"><br>
+            <span class="boxLabel">G.</span><input type="text" id="CG"><br>
+            <span class="boxLabel">H.</span><input type="text" id="CH"><br>
+            <span class="boxLabel">I.</span><input type="text" id="CI"><br>
+            <span class="boxLabel">J.</span><input type="text" id="CJ"><br>
+            <span class="boxLabel">K.</span><input type="text" id="CK"><br>
+            <span class="boxLabel">L.</span><input type="text" id="CL"><br>
+            <span class="boxLabel">M.</span><input type="text" id="CM"><br>
+            <span class="boxLabel">N.</span><input type="text" id="CN"><br>
+            <span class="boxLabel">O.</span><input type="text" id="CO"><br>
+            <span class="boxLabel">P.</span><input type="text" id="CP"><br>
+            <span class="boxLabel">Q.</span><input type="text" id="CQ"><br>
+            <span class="boxLabel">R.</span><input type="text" id="CR"><br>
+            <span class="boxLabel">S.</span><input type="text" id="CS"><br>
+            <span class="boxLabel">T.</span><input type="text" id="CT"><br>
+            <br>
+            <h4>勝利・敗北条件</h4>
+            <span class="boxLabel">A.</span><input type="text" id="DA"><br>
+            <span class="boxLabel">B.</span><input type="text" id="DB"><br>
+            <span class="boxLabel">C.</span><input type="text" id="DC"><br>
         </div>
     </div>
+
+
+    <script>
+        $('input[type="text"]').on('input', function () {
+            const qId = $(this).attr('id');
+            const id = qId.slice(1);
+
+            if ($(this).val() == '') {
+                $('.display.' + qId).text('【' + id + '】');
+            } else {
+                $('.display.' + qId).text('【' + id + '. ' + $(this).val() + '】');
+            }
+        });
+    </script>
 
 </body>
 </html>
