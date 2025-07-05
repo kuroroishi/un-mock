@@ -194,8 +194,11 @@
         </div>
     
         <div class="sidebar">
+            <p class="adjustBr">
+                <br><br><br><br><br>
+            </p>
             <h2 style="display: inline-block; width:135px ;">回答欄</h2>
-            <h2 style="width:115px ;" class="secretLabel secret">模範解答</h2>
+            <h2 style="width:115px ;" class="secretLabel secret">想定解答</h2>
             <h2 style="width:20px ;" class="secretLabel secret">採点</h2><br>
             <br>
             <h4>ゲームの準備</h4>
@@ -215,6 +218,9 @@
             <span class="boxLabel">N.</span><input  type="text" class="answerBox" id="AN"><span class="correct secret">2</span><input type="checkbox" class="correctCheck secret"><br>
             <span class="boxLabel">O.</span><input  type="text" class="answerBox" id="AO"><span class="correct secret">3</span><input type="checkbox" class="correctCheck secret"><br>
             <br>
+            <p class="adjustBr">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </p>
             <h4>ゲームの手順</h4>
             <span class="boxLabel">A.</span><input  type="text" class="answerBox" id="BA"><span class="correct secret">スタート</span><input type="checkbox" class="correctCheck secret"><br>
             <span class="boxLabel">B.</span><input  type="text" class="answerBox" id="BB"><span class="correct secret">スタンド</span><input type="checkbox" class="correctCheck secret"><br>
@@ -240,6 +246,9 @@
             <span class="boxLabel">V.</span><input  type="text" class="answerBox" id="BV"><span class="correct secret">2体以上のユニット</span><input type="checkbox" class="correctCheck secret"><br>
             <span class="boxLabel">W.</span><input  type="text" class="answerBox" id="BW"><span class="correct secret">そのターンにメインエリアに出た</span><input type="checkbox" class="correctCheck secret"><br>
             <br>
+            <p class="adjustBr">
+                <br><br><br><br><br><br><br><br><br><br>
+            </p>
             <h4>ユニットのアタックについて</h4>
             <span class="boxLabel">A.</span><input  type="text" class="answerBox" id="CA"><span class="correct secret">メインエリア</span><input type="checkbox" class="correctCheck secret"><br>
             <span class="boxLabel">B.</span><input  type="text" class="answerBox" id="CB"><span class="correct secret">スタンド</span><input type="checkbox" class="correctCheck secret"><br>
@@ -262,6 +271,9 @@
             <span class="boxLabel">S.</span><input  type="text" class="answerBox" id="CS"><span class="correct secret">表向き</span><input type="checkbox" class="correctCheck secret"><br>
             <span class="boxLabel">T.</span><input  type="text" class="answerBox" id="CT"><span class="correct secret">後衛ゾーン</span><input type="checkbox" class="correctCheck secret"><br>
             <br>
+            <p class="adjustBr">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </p>
             <h4>勝利・敗北条件</h4>
             <span class="boxLabel">A.</span><input  type="text" class="answerBox" id="DA"><span class="correct secret">相手のエナジーカードが全て表向き</span><input type="checkbox" class="correctCheck secret"><br>
             <span class="boxLabel">B.</span><input  type="text" class="answerBox" id="DB"><span class="correct secret">相手プレイヤーにアタック</span><input type="checkbox" class="correctCheck secret"><br>
@@ -291,10 +303,12 @@
                 if (!ok) return;
             }
 
+            $('.main').toggleClass('secret');
             $('.secretLabel').toggleClass('secret');
             $('.correct').toggleClass('secret');
             $('.correctCheck').toggleClass('secret');
             $('.score').toggleClass('secret');
+            $('.adjustBr').toggleClass('secret');
             $('.sidebar').toggleClass('fullWidth');
 
             if (!secretShown) {
