@@ -12,22 +12,28 @@ html, body {
 }
 
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 40vw;
+  grid-auto-rows: auto;
 }
 
-.main {
-  flex: 1;
-  padding: 10px;
-  background-color: #f9f9f9;
+.fullOnly{
+  display: block;
 }
 
-.sidebar {
-  width: 40vw;
+.main{
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.side {
   background-color: #333;
   color: white;
-  padding: 10px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
 
-}.fullWidth {
+.fullWidth {
   width: 100vw;
 }
 
